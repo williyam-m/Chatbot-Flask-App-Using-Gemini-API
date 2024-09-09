@@ -3,6 +3,7 @@ from flask_wtf.csrf import CSRFProtect
 import requests
 from dotenv import load_dotenv
 import os
+import markdown
 import google.generativeai as genai
 
 
@@ -39,8 +40,8 @@ def fetch():
             ai_response = response.text
 
 
-            output_text = ai_response
-            conversation_history.append(["Bot", output_text ])
+            ai_response = markdown.markdown(ai_response)
+            conversation_history.append(["Bot", ai_response ])
 
         except KeyError:
             error_message = "Unexpected response from Gemini API. Please try again later."
