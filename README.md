@@ -13,25 +13,25 @@ This project implements a chatbot using the Gemini API and Flask.
 
 1. **Clone the Repository**
    ```bash
-   `git clone https://github.com/williyam-m/Chatbot-Flask-App-Using-Gemini-API.git`
+   git clone https://github.com/williyam-m/Chatbot-Flask-App-Using-Gemini-API.git
    ```
 2. **Create a Virtual Environment**
     ```bash
-   `python -m venv venv`
+   python -m venv venv
    ```
 3. **Activate the Virtual Environment**
 
    - **On Windows:**
      ```bash
-     `venv\Scripts\activate`
+     venv\Scripts\activate
      ```
    - **On Linux/macOS:**
      ```bash
-     `source venv/bin/activate`
+     source venv/bin/activate
      ```
 4. **Install Required Packages**
     ```bash
-   `pip install -r requirements.txt`
+   pip install -r requirements.txt
     ```
 5. **Configure Environment Variables**
 
